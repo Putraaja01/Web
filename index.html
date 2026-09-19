@@ -85,12 +85,20 @@
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium mb-1">Pilih Paket Spesifikasi</label>
+                    <label class="block text-sm font-medium mb-1">Pilih Spesifikasi Paket (1GB - 12GB)</label>
                     <select id="package" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 focus:outline-none focus:border-indigo-500">
                         <option value="1|Panel 1GB / 1 vCPU|1024|100|2000">Panel 1GB / 1 vCPU - Rp 2.000</option>
-                        <option value="2|Panel 2GB / 2 vCPU|2048|200|5000">Panel 2GB / 2 vCPU - Rp 5.000</option>
-                        <option value="3|Panel 4GB / 3 vCPU|4096|300|10000">Panel 4GB / 3 vCPU - Rp 10.000</option>
-                        <option value="4|Panel 8GB / Max vCPU|8192|0|20000">Panel 8GB / Max - Rp 20.000</option>
+                        <option value="2|Panel 2GB / 1 vCPU|2048|100|4000">Panel 2GB / 1 vCPU - Rp 4.000</option>
+                        <option value="3|Panel 3GB / 2 vCPU|3072|200|6000">Panel 3GB / 2 vCPU - Rp 6.000</option>
+                        <option value="4|Panel 4GB / 2 vCPU|4096|200|8000">Panel 4GB / 2 vCPU - Rp 8.000</option>
+                        <option value="5|Panel 5GB / 3 vCPU|5120|300|10000">Panel 5GB / 3 vCPU - Rp 10.000</option>
+                        <option value="6|Panel 6GB / 3 vCPU|6144|300|13000">Panel 6GB / 3 vCPU - Rp 13.000</option>
+                        <option value="7|Panel 7GB / 4 vCPU|7168|400|16000">Panel 7GB / 4 vCPU - Rp 16.000</option>
+                        <option value="8|Panel 8GB / 4 vCPU|8192|400|19000">Panel 8GB / 4 vCPU - Rp 19.000</option>
+                        <option value="9|Panel 9GB / 5 vCPU|9216|500|22000">Panel 9GB / 5 vCPU - Rp 22.000</option>
+                        <option value="10|Panel 10GB / 5 vCPU|10240|500|25000">Panel 10GB / 5 vCPU - Rp 25.000</option>
+                        <option value="11|Panel 11GB / 6 vCPU|11264|600|28000">Panel 11GB / 6 vCPU - Rp 28.000</option>
+                        <option value="12|Panel 12GB / Unlimited|12288|0|30000">Panel 12GB / Unlimited - Rp 30.000</option>
                     </select>
                 </div>
 
@@ -104,7 +112,7 @@
                     </select>
                 </div>
 
-                <p class="text-xs text-slate-400">*Tarif harga fleksibel mulai dari Rp 1.000 sampai Rp 20.000 sesuai pilihan paket & durasi.</p>
+                <p class="text-xs text-slate-400">*Tarif harga fleksibel mulai dari Rp 2.000 hingga Rp 30.000 sesuai spesifikasi RAM dan durasi.</p>
 
                 <button type="submit" id="submitBtn" class="w-full bg-indigo-600 hover:bg-indigo-500 font-semibold py-3 rounded-xl transition duration-200">
                     Proses Pembelian & Buat Panel
@@ -262,7 +270,7 @@
                         waText += `🔑 Password: ${password}\n`;
                         waText += `🛠️ Paket: ${pkgName}\n`;
                         waText += `⏳ Durasi: ${durName}\n`;
-                        waText += `💰 Total: Rp ${final_price.toLocaleString('id-ID')}\n`;
+                        waText += `💰 Total: Rp ${finalPrice.toLocaleString('id-ID')}\n`;
                         waText += `🔗 Link Panel: ${domain}\n\n`;
                         waText += `Terima kasih telah order!`;
 
